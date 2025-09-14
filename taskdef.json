@@ -9,7 +9,7 @@
   "containerDefinitions": [
     {
       "name": "app-container",
-      "image": "<IMAGE1_URI>",
+      "image": "IMAGE1_URI",
       "portMappings": [
         {
           "containerPort": 8080
