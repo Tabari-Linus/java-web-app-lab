@@ -7,3 +7,4 @@ Resources:
         LoadBalancerInfo:
           ContainerName: "app-container"
           ContainerPort: 8080
+        HealthCheckGracePeriodInSeconds: 60
