@@ -9,7 +9,7 @@
   "containerDefinitions": [
     {
       "name": "app-container",
-      "image": "IMAGE1_URI",
+      "image": "329599647651.dkr.ecr.eu-central-1.amazonaws.com/java-app-repo:latest",
       "portMappings": [
         {
           "containerPort": 8080
