@@ -1,18 +1,14 @@
 package com.lii.javawebapplab.controller;
 
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 class AppController {
-
     @GetMapping("/")
-    public String home(Model model) {
-        model.addAttribute("fullName", "Linus Tabari");
-        return "index";
+    public String home() {
+        return "<html><body><h1>Full name: Linus Tabari</h1><p>Lab: ECS CICD LAB</p></body></html>";
     }
 
     @GetMapping("/health")
