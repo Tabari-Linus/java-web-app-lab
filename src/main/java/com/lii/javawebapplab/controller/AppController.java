@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 class AppController {
     @GetMapping("/")
     public String home() {
-        return "<html><body><h1>Full name: Linus Tabari</h1><p>Lab: ECS CICD LAB Done</p></body></html>";
+        return "<html><body><h1>Full name: Linus Tabari</h1><p>Lab: ECS CICD LAB</p></body></html>";
     }
 
     @GetMapping("/health")
