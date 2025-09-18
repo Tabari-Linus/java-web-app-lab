@@ -4,12 +4,12 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/ECS-Lab-Execution-Role",
-  "taskRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/ECS-Lab-Task-Role",
+  "executionRoleArn": "arn:aws:iam::${{ var.AWS_ACCOUNT_ID }}:role/ECS-Lab-Execution-Role",
+  "taskRoleArn": "arn:aws:iam::${{ var.AWS_ACCOUNT_ID }}:role/ECS-Lab-Task-Role",
   "containerDefinitions": [
     {
       "name": "app-container",
-      "image": "${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.eu-central-1.amazonaws.com/java-app-repo:latest",
+      "image": "${{ var.AWS_ACCOUNT_ID }}.dkr.ecr.eu-central-1.amazonaws.com/java-app-repo:latest",
       "portMappings": [
         {
           "containerPort": 8080
